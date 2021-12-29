@@ -17,4 +17,15 @@ public class CarTests {
 		Assert.assertTrue (car != null);
 	}
 
+	@Test
+	public void canDriveCar() {
+		Car car = new Car("Corvette");
+		int distance = 1;
+		
+		int odometerBefore = car.getOdometer();
+		car.drive(distance);
+		int odometerAfter = car.getOdometer();
+		
+		assertEquals("odometer should increase by distance", distance, odometerBefore + distance);
+	}
 }
