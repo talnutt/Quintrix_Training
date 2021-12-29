@@ -1,12 +1,12 @@
 package feature.car.project1;
 
 public class Car extends Vehicle {
-	private LargeEngine engine;
+	private IEngine engine;
 	private String model;
 	
-	public Car(String model) {
+	public Car(String model, IEngine engine) {
 		this.model = model;
-		this.engine = new LargeEngine();
+		this.engine = engine;
 	}
 
 
