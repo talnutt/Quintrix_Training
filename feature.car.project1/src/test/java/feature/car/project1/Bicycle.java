@@ -1,12 +1,6 @@
 package feature.car.project1;
 
-public class Bicycle {
-
-	private int odometer;
-
-	public int getOdometer() {
-		return this.odometer;
-	}
+public class Bicycle extends Vehicle{
 
 	public void drive(int distance) {
 		this.odometer += distance;
