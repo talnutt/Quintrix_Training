@@ -28,4 +28,21 @@ public class CarTests {
 		
 		assertEquals("odometer should increase by distance", distance, odometerBefore + distance);
 	}
+	
+	@Test
+	public void enginesHaveCorrectCylinderCount() {
+		int smallEngineCylinderCount = 4;
+		int largeEngineCylinderCount = 8;
+		
+		SmallEngine smallEngine = new SmallEngine();
+		LargeEngine largeEngine = new LargeEngine();
+		
+		int actualSmallEngineCylinderCount = smallEngine.getCylinderCount();
+		int actualLargeEngineCylinderCount = largeEngine.getCylinderCount();
+		
+		assertTrue("cylinder counts should match as expected.", smallEngineCylinderCount == actualSmallEngineCylinderCount);
+		assertTrue("cylinder counts should match as expected.", largeEngineCylinderCount == actualLargeEngineCylinderCount);
+		
+	}
+	
 }

@@ -1,11 +1,7 @@
 package feature.car.project1;
 
-public class LargeEngine implements IEngine {
-	
-	public void startEngine() {
-		System.out.println("Engine Started");
-		}
-
-	
-	
+public class LargeEngine extends Engine {
+	public LargeEngine() {
+		this.cylinderCount = 8;
+	}
 }

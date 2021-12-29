@@ -2,5 +2,6 @@ package feature.car.project1;
 
 public interface IEngine {
 	int getCylinderCount();
+	void startEngine();
 
 }
