@@ -1,6 +1,6 @@
 package feature.car.project1;
 
-public class Car {
+public class Car extends Vehicle {
 	private LargeEngine engine;
 	private String model;
 	

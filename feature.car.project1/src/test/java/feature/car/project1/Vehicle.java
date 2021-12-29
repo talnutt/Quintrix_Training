@@ -8,5 +8,9 @@ public abstract class Vehicle {
 		return this.odometer;
 		
 	}
+	
+	public void drive(int distance) {
+		this.odometer += distance;
+	}
 
 }
