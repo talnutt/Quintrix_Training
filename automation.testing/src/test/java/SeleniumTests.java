@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -19,5 +21,10 @@ public class SeleniumTests {
 	  driver.navigate().to(url);
 	  String currentURL = driver.getCurrentUrl();
 	  Assert.assertEquals(url, currentURL);
+  }
+  
+  @Test
+  public void canClickButton() {
+	  
   }
 }
