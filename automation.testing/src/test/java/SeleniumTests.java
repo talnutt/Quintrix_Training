@@ -25,6 +25,16 @@ public class SeleniumTests {
   
   @Test
   public void canClickButton() {
+	  String chromeDriverPath = "/Users/tealek.alnutt/Downloads/chromedriver";
+	  String edgeDriverPath = "/Users/tealek.alnutt/Downloads/edgedriver_mac64/msedgedriver";
+	  System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+	  System.setProperty("webdriver.edge.driver", edgeDriverPath);
 	  
+	  String url = "https://www.selenium.dev/";
+	  WebDriver driver = new EdgeDriver();
+	  
+	  driver.navigate().to(url);
+	  WebElement element = driver.findElement(By.cssSelector("a[href='/documentation/webdriver/']"));
+	  element.click();
   }
 }

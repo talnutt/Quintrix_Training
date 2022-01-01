@@ -3,11 +3,19 @@
   <groupId>quintrix.training</groupId>
   <artifactId>Java.IO</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-	<repositories>
-    <repository>
-        <id>maven-restlet</id>
-        <name>Public online Restlet repository</name>
-        <url>http://maven.restlet.org</url>
-    </repository>
-</repositories>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.5.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project >
