@@ -1,29 +1,26 @@
-import java.io.FileReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 import org.junit.Test;
 
 public class BrowserTest {
 	
+	
 	@Test
-	public void canGetBrowserType() {
+	public void canGetBrowserType() throws IOException {
+		Properties prop = new Properties();
+		InputStream inputStream = null;
 		
-		try (FileReader reader = new FileReader("config")) {
-			Properties properties = new Properties ();
-			properties.load(reader);
-			
-			
-			String BrowserType = properties.getProperty("BrowserType");
-			
-			System.out.println(BrowserType);
+		try {
+			inputStream = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.resources");
+			prop.load(inputStream);
+		} 
+		finally {
+			inputStream.close();
 		}
 		
-		catch (Exception e) {
-			;
-			e.printStackTrace();
-		}
-	}
-	
-	
-
+		System.out.println(prop.getProperty("BrowserType"));
+	}	
 }
