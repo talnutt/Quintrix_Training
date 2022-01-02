@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 public class SeleniumTests {
 	private EdgeDriver driver;
 	private final String url = "https://www.selenium.dev/";
+	
 	@Test
 	public void canLaunchWebDriver() {
 
