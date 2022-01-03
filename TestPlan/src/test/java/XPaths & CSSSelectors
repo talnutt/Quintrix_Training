@@ -1,0 +1,15 @@
+1. Write the xpath that will return the ‘Full Name’textbox using the ID attribute. Hint: This element has the ‘input’tag.
+
+//input[@placeholder'FullName']
+
+2. Write the xpath that will return all elements on the page with the ‘button’tag.
+
+//button[@type'button']
+
+3. Write a selector that will return the ‘Full Name’ textboxusing the ID attribute. Hint: This element has the ‘input’ tag.
+
+input[id*='userName'][type='text'] 
+
+4.  Write a selector that will return all 3 buttons shown below.
+
+input[type*='button']
