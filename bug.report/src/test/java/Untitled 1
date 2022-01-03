@@ -1,0 +1,57 @@
+1.
+Title: "Sort By" doesn't sort products.
+
+Environment:
+	Device: laptop
+	OS: macOS Monterey
+
+Steps to Reproduce
+	1. Click on Dresses.
+	2. Find the "sort by" drop box, and choose "Price: Highest first"
+
+Expected Result
+	Dresses should be sorted by price from highest to lowest.
+
+Actual Result
+	The screen shows that it's loading, but nothing is sorted.
+
+Severity
+	moderate
+
+2.
+Title: Contact us accepts unformatted email address
+
+Environment:
+	Device: laptop
+	OS: macOS Monterey
+
+Steps to Reproduce
+	1. Click "Contact Us" on the top of the page
+	2. In the email address box, enter any symbols. (must include "@" and "."
+
+Expected Result
+	The system should recognize that this is not a real email address.
+
+Actual Result
+	Registers an email address as long as "@" is included followed by "."
+
+Severity
+	moderate
+
+3.
+Title: Sale banner doesn't work.
+
+Environment:
+	Device: Laptop
+	OS: macOS Monterey
+
+Steps to Reproduce
+	1. Go to the sign-in page.
+	2. Click on the sale banner on the top of the page.
+
+Expected Result
+	When clicked, the user should be directed to products on sale
+Actual Result
+	The webpage stays the same.
+Severity
+	moderate
