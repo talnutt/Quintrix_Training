@@ -1,4 +1,5 @@
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -26,6 +27,8 @@ public class APITests {
 				.extract()
 				.response();
 		String actualEmail = response.jsonPath().getString("data.email");
+		Assert.assertEquals(actualEmail, expectedEmail);
+		System.out.println(Thread.currentThread().getId());
 	}
 	@Test
 	public void canVerifyToken() {
@@ -39,6 +42,7 @@ public class APITests {
 				.extract()
 				.response();
 		String actualToken = response.jsonPath().getString("data.token");
+		System.out.println(Thread.currentThread().getId());
 	}
 	@Test
 	public void canDelete() {
@@ -52,6 +56,7 @@ public class APITests {
 				.extract()
 				.response();
 		String actualCode = response.jsonPath().getString("data.response");
+		System.out.println(Thread.currentThread().getId());
 	}
 	@Test
 	public void canPatch() {
@@ -67,6 +72,7 @@ public class APITests {
 		String actualName = response.jsonPath().getString("name");
 		String updatedTimeStamp = response.getHeader("Date");
 		updatedTimeStamp = updatedTimeStamp.substring(0, updatedTimeStamp.length() - 7);
+		System.out.println(Thread.currentThread().getId());
 	}
 	@Test
 	public void canPut() {
@@ -79,8 +85,7 @@ public class APITests {
 				.then()
 				.extract()
 				.response();
-		String actualName = response.jsonPath().getString("name");
-		String updatedTimeStamp = response.getHeader("Date");
+		System.out.println(Thread.currentThread().getId());
 	}
 	
 	@Test
@@ -94,7 +99,8 @@ public class APITests {
 				.then()
 				.extract()
 				.response();
-		Users[] users = response.getBody().jsonPath().getObject("user data", Users[].class);
+		Users[] users = response.getBody().jsonPath().getObject("userdata", Users[].class);
+		System.out.println(Thread.currentThread().getId());
 		
 	}
 	@BeforeMethod
