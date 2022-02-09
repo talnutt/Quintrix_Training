@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class EdgeDriverManager extends DriverManager {
+public class EdgeDriverManager {
 public WebDriver driver;
 	
 	public void edgeDriver () {

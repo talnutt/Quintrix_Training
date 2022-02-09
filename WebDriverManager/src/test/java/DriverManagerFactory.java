@@ -1,14 +1,15 @@
+import java.io.IOException;
 import java.sql.DriverManager;
 
-public class DriverManagerFactory extends TestBase{
+public class DriverManagerFactory {
 
-	public static DriverManager getManager(String browserType) {
-
+	public DriverManager getManager(String browserType){
+		
 		if(browserType.equals("chrome")) {
 			return new ChromeDriverManager();
 		}else if(browserType.equals("edge")) {
 			return new EdgeDriverManager();
-		}
-		return null;
+		}else
+			throw new NullPointerException("BrowserType not found.");
 	}
 }
