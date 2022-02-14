@@ -1,0 +1,33 @@
+Test Plan
+
+Objectives
+	The website automationpractice.com is an online retail store. This test plan will ensure that the website is functioning properly. 
+
+Scope
+	The objective is to test as many critical areas as possible. This will include
+		- registering for an account
+		- signing in to an account
+		- the functionality of search criteria 
+		- the functionality of online payment options
+
+Assumptions
+	The tests will prove that the site is ready on the user end.
+	
+Risks
+	
+
+Test Approach
+	We will use a combination of automated and manual tests using Java Code in Eclipse.
+
+Test Environment
+	The tests will be conducted in Eclipse, using Java code.
+
+Test Schedule
+	The more critical tests will be conducted first. These would be 
+		-payment options
+		-account registration
+
+Deliverables
+	-Test Plan
+	-Test Results
+	
